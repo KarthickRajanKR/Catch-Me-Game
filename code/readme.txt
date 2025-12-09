@@ -5,7 +5,7 @@ return back to the player like Thor's hammer. Use this cool trick to make your s
 
 Contents:
 main.lua : This lua file contains game code
-audio folder : It contains audio files
+audio folder : This contains audio files
 
 Developed by : 
 Karthick Rajan
@@ -20,3 +20,4 @@ Sound Effect Generated in : https://www.bfxr.net/
 The code in this project was written by me. Feel free to use, copy, and modify.
 
 Cheers!
+
