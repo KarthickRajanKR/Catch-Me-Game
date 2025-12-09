@@ -11,7 +11,7 @@ Developed by : Karthick Rajan
 Framework & Language Used : LÖVE2D & Lua
 
 Credits: 
-Sound Effects : https://www.bfxr.net/
+Sound Effects : https://www.bfxr.net/ ,
 Background Music : https://pixabay.com/music/video-games-retro-chiptune-adventure-8-bit-video-game-music-318059/
 
 The code in this project was written by me. Feel free to use, copy, and modify
