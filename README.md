@@ -12,7 +12,7 @@ https://github.com/user-attachments/assets/0ac95e95-54cc-4ef4-ba67-0b26a4ae20ca
 Developed by : 
 Karthick Rajan
 
-Framerwork Used: LÖVE2D
+Framerwork Used: LÖVE2D,
 Language Used : Lua
 
 Credits:
