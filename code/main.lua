@@ -1,4 +1,4 @@
-
+-- GAME CODE
 
 -- On ready
 function love.load()
@@ -20,7 +20,6 @@ function love.load()
     sounds.background_music = love.audio.newSource("audio/background_music.mp3","stream")
     sounds.bullet = love.audio.newSource("audio/bullet.wav","static")
     sounds.enemy_dead = love.audio.newSource("audio/enemy_dead.wav","static")
-    sounds.dead = love.audio.newSource("audio/dead.wav","static")
 
     --volume
     sounds.background_music:setVolume(.09)
