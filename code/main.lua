@@ -21,7 +21,13 @@ function love.load()
     sounds.bullet = love.audio.newSource("audio/bullet.wav","static")
     sounds.enemy_dead = love.audio.newSource("audio/enemy_dead.wav","static")
     sounds.dead = love.audio.newSource("audio/dead.wav","static")
+
+    --volume
+    sounds.background_music:setVolume(.09)
+    sounds.bullet:setVolume(.2)
+    sounds.enemy_dead:setVolume(.2)
     -- background music
+
     sounds.background_music:setLooping(true)
     sounds.background_music:play()
 
@@ -39,14 +45,14 @@ function love.load()
     player.radius = 60
 
     -- enemy 
-    enemy1 = enemy(-200 ,-200 ,15 , 5)
-    enemy2 = enemy(window_data.width / 2 , -200, 20, 10)
-    enemy3 = enemy(window_data.width +200, 0, 25, 15)
-    enemy4 = enemy(-200, window_data.height / 2, 30, 20)
-    enemy5 = enemy(window_data.width + 200, window_data.height / 2, 35,25)
-    enemy6 = enemy(-200, window_data.height, 40, 30)
-    enemy7 = enemy(window_data.width / 2, window_data.height + 200, 40, 35)
-    enemy8 = enemy(window_data.width, window_data.height + 200, 40, 40)
+    enemy1 = enemy(-200 ,-200 ,13 , 5)
+    enemy2 = enemy(window_data.width / 2 , -200, 15, 10)
+    enemy3 = enemy(window_data.width +200, 0, 20, 15)
+    enemy4 = enemy(-200, window_data.height / 2, 23, 20)
+    enemy5 = enemy(window_data.width + 200, window_data.height / 2, 25,25)
+    enemy6 = enemy(-200, window_data.height, 28, 30)
+    enemy7 = enemy(window_data.width / 2, window_data.height + 200, 30, 35)
+    enemy8 = enemy(window_data.width, window_data.height + 200, 33, 40)
 
     --mouse
     mouse_data = {}
@@ -211,7 +217,7 @@ function enemy(x,y,speed,reincarn_time)
     -- Enemy logic
     enemy.logic = function(delta)
         if (enemy.is_dead == false) then
-            enemy.distance = find_distance(player.position, enemy.position)  -- d\Distance between enemy and player
+            enemy.distance = find_distance(player.position, enemy.position)  -- Distance between enemy and player
             -- Unit Vector (direction)
             enemy.direction = find_direction(player.position,enemy.position,enemy.distance)
             enemy.position.x = enemy.position.x + (enemy.direction.x * enemy.speed * delta * 10 )
@@ -279,7 +285,7 @@ function bullet(x , y )
     bullet.shoot_speed = 80
     bullet.return_speed = 120
     bullet.is_idle = true
-    bullet.timer.back_time = 3.5
+    bullet.timer.back_time = 2.3
     bullet.timer.v_back_time = 0
 
     -- bullet logic
