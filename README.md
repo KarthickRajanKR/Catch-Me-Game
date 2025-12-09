@@ -25,6 +25,6 @@ Background Music : https://pixabay.com/music/video-games-retro-chiptune-adventur
 
 The code in this project was written by me. Feel free to use, copy, and modify
 
-To play the game, download game folder and run catch me.love
+To play the game, download game folder and run "Catch me.exe"
 
 Cheers!
